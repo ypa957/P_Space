@@ -29,8 +29,9 @@ SSH 连接
 ```shell
 cd ~
 rm -rvf .ssh
-ls -IF
-cat id_rsa.pub
+ssh-keygen -t rsa -C 邮箱
+cd .ssh
+cat id_rsa.pub # 复制内容
 ```
 
 - 在 GitHub 中设置 SSHandGPGKeys
